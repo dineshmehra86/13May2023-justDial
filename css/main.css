@@ -12,6 +12,20 @@ header{
     width: 92%;
     margin: auto;
 }
+
+ul > li> a:hover  {
+    background-color: #ededed;
+    cursor: pointer;
+}
+.d_menu > li:hover ul { 
+    display: block; /*Show*/
+}
+.d_submenu {
+    width: 120px;
+    display: none; /*Hide*/
+}
+
+
 main {
 height: 3119px;
 top: 81px;
@@ -20,6 +34,7 @@ top: 81px;
     margin-top: 5rem!important;
 }
 footer{ }
+
 .d_ftr1 {
     height: 112px;
 }
