@@ -14,12 +14,32 @@
 
 <body>
     <div class="container d_cont d_tbdr bg-white">
-        <header class="d_tbdr bg-white fixed-top">
+        <header class="bg-white fixed-top">
             <div class="row h-100">
-                <div class="col-2 d_tbdr"><img src="./img/logo.svg" class="img-fluid"/></div>
-                <div class="col-3 d_tbdr">2</div>
-                <div class="col-7 d_tbdr">
-                    <ul class="nav mt-3 d_menu">
+                <div class="col-4 col-lg-2 d_tbdr">
+                    <a href="#" class="d-block">
+                        <img class="img-fluid w-50" src="./img/logo.svg"/>
+                    </a>
+                        
+                </div>
+                <div class="col-8 col-lg-2 d_tbdr">2</div>
+                <div class="col-12 col-lg-8 ps-4 pe-4 pt-1">
+                    <form class="border border-dark rounded-3 p-1 bg-white">
+                        <div class="row">
+                            <div class="col-2 p-0 pt-1">
+                                <img class="btn" src="./img/search.svg"/>
+                            </div>
+                            <div class="col-8 p-0">
+                                <input type="search" class="form-control border border-0 bg-none" id="exampleInputPassword1">
+                            </div>
+                            <div class="col-2 p-0">
+                                <button class="btn float-end">
+                                    <img class="" src="./img/mic.svg"/>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="d-none d-sm-block nav mt-3 ms-5 d_menu">
                         <li class="nav-item">
                             <a class="ps-2 pt-1 pb-1 pe-2  nav-link active" aria-current="page" href="#"><img src="./img/language_icon.svg"/> English <img src="./img/down_arrow.svg"/></a>
                                 <ul class="nav flex-column d_submenu bg-white border list-unstyled position-absolute">
