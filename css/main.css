@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format("truetype");
+}
 body {
     background-color: #e8e8e8;
+    font-family: 'Roboto';
 }
 .d_tbdr {
     border: red dashed 2px;
@@ -33,7 +38,9 @@ top: 81px;
 .mt-5.d_mt-5 {
     margin-top: 5rem!important;
 }
-footer{ }
+/* footer { 
+
+} */
 
 .d_ftr1 {
     height: 112px;
@@ -47,11 +54,69 @@ footer{ }
 .d_ftr4 {
     height: 97px;
 }
+.d_tnr {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+::-webkit-input-placeholder {
+    font-size: 16px;
+    
+    color: #111;
+
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+       font-size: 15px;
+       
+       color: #111;
+       opacity:0.5!important;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+       font-size: 15px;
+       
+       color: #111;
+       opacity:0.5!important;
+ }
+ 
+ /* Overriding styles */
+ 
+ ::-webkit-input-placeholder {
+    font-size: 15px!important;
+    
+    color: #111;
+    opacity:0.5!important;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+       font-size: 15px!important;
+       color: #111;
+       opacity:0.5!important;
+ }
+ ::-moz-placeholder {  /* Firefox 19+ */
+       font-size: 15px!important;
+       
+       color: #111;
+       opacity:0.5!important;
+ }
 
 
 
 @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1438px;
+    }
+}
+@media screen and (max-width: 576px){
+    .d_form_col {
+        height: 50px;
+    }
+    
+    .mt-5.d_mt-5 {
+        margin-top: 6rem!important;
+    }
+    .mt-5.d_mt-5 a {
+        font-size: 11px;
+        color: #414e5a;
     }
 }

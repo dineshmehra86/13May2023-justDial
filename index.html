@@ -9,6 +9,7 @@
     <link rel="icon" href="./fevicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -20,17 +21,37 @@
                     <a href="#" class="d-block">
                         <img class="img-fluid w-50" src="./img/logo.svg"/>
                     </a>
-                        
                 </div>
-                <div class="col-8 col-lg-2 d_tbdr">2</div>
+                <div class="col-8 col-lg-2 d_tbdr">
+                    <div class="d-block d-sm-none">
+                        <ul class="nav float-end mt-1 d_tnr">
+                            <li class="nav-item">
+                                <a class="nav-link active bg-primary text-white rounded-pill pt-1 pb-1" aria-current="page" href="#">Open App</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-1 pb-1" href="#">
+                                    <!-- <img src="./img/bell_icon.svg"/> -->
+                                    <i class="fa-regular fa-bell fa-lg text-dark"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pt-1 pb-1 ps-0 pe-0" href="#">
+                                    <i class="fa-solid fa-bars text-dark"></i>
+                                </a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
                 <div class="col-12 col-lg-8 ps-4 pe-4 pt-1">
-                    <form class="border border-dark rounded-3 p-1 bg-white">
+                    <form class="d-block d-sm-none border border-dark-subtle rounded-3 p-1 bg-white">
                         <div class="row">
-                            <div class="col-2 p-0 pt-1">
-                                <img class="btn" src="./img/search.svg"/>
+                            <div class="col-1 p-0">
+                                <button class="btn ms-3 me-1 p-0 pt-2">
+                                    <i class="fa-solid fa-magnifying-glass text-body-tertiary"></i>
+                                </button>
                             </div>
-                            <div class="col-8 p-0">
-                                <input type="search" class="form-control border border-0 bg-none" id="exampleInputPassword1">
+                            <div class="col-9 p-0">
+                                <input type="search" placeholder="Packers and movers" class="form-control border border-0 bg-none shadow-none bg-transparent  pt-2 pb-0" id="exampleInputPassword1">
                             </div>
                             <div class="col-2 p-0">
                                 <button class="btn float-end">
@@ -39,48 +60,154 @@
                             </div>
                         </div>
                     </form>
-                    <ul class="d-none d-sm-block nav mt-3 ms-5 d_menu">
-                        <li class="nav-item">
-                            <a class="ps-2 pt-1 pb-1 pe-2  nav-link active" aria-current="page" href="#"><img src="./img/language_icon.svg"/> English <img src="./img/down_arrow.svg"/></a>
-                                <ul class="nav flex-column d_submenu bg-white border list-unstyled position-absolute">
-                                    <li class="nav-item">
-                                        <a href="'#" class="nav-link text-secondary-emphasis">Hindi</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="'#" class="nav-link text-secondary-emphasis">English</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="'#" class="nav-link text-secondary-emphasis">Marathi</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="'#" class="nav-link text-secondary-emphasis">Gujrati</a>
-                                    </li>
-                                </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis" href="#">We are Hiring</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class=" ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis" href="#">Investor Relation</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/speakar_icon.svg"/> Adverties</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/listing_icon.svg"/> Free listing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/bell_icon.svg"/></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/listing_icon.svg"/> Login/Signup</a>
-                        </li>
-                      </ul>
+                    <div class="d-none d-sm-block d_tbdr">
+                        <ul class="nav mt-3 ms-5 d_menu">
+                            <li class="nav-item">
+                                <a class="ps-2 pt-1 pb-1 pe-2  nav-link active" aria-current="page" href="#"><img src="./img/language_icon.svg"/> English <img src="./img/down_arrow.svg"/></a>
+                                    <ul class="nav flex-column d_submenu bg-white border list-unstyled position-absolute">
+                                        <li class="nav-item">
+                                            <a href="'#" class="nav-link text-secondary-emphasis">Hindi</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="'#" class="nav-link text-secondary-emphasis">English</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="'#" class="nav-link text-secondary-emphasis">Marathi</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="'#" class="nav-link text-secondary-emphasis">Gujrati</a>
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis" href="#">We are Hiring</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis" href="#">Investor Relation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/speakar_icon.svg"/> Adverties</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/listing_icon.svg"/> Free listing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/bell_icon.svg"/></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/listing_icon.svg"/> Login/Signup</a>
+                            </li>
+                          </ul>
+                    </div>
+                    
                 </div>
             </div>
         </header>
-        <main class="d_tbdr bg-success mt-5 d_mt-5">
-            main
+        <main class="d_tbdr bg-white mt-5 d_mt-5">
+            <div class="d_m1 d-block d-sm-none">
+                <div class="row m-0">
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/1.gif"/>
+                            B2B
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/2.svg"/>
+                            Doctors
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/3.svg"/>
+                            Travel
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/4.svg"/>
+                            Beauty
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/5.svg"/>
+                            Interiors Designers
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/6.svg"/>
+                            Consultants
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/7.svg"/>
+                            Rent & Hire
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/8.svg"/>
+                            Wedding Requissites
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/9.svg"/>
+                            Home Services
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/10.svg"/>
+                            Jobs
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/11.svg"/>
+                            Repairs & Services
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/12.gif"/>
+                            PG/Hostal
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/13.svg"/>
+                            Loans
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/14.svg"/>
+                            Real Estate
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/15.svg"/>
+                            Education
+                        </a>
+                    </div>
+                    <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
+                        <a href="#" class="btn btn-sm text-center d-flex flex-column flex-wrap">
+                            <img class="img-fluid" src="./img/16.svg"/>
+                            Show More
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="d_m1">
+                m2
+            </div>
         </main>
         <footer class="bg-warning">
             <div class="d_1">
