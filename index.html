@@ -14,28 +14,99 @@
 </head>
 
 <body>
+    <!-- Modal -->
+<div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="btn fw-bold text-body-tertiary">Sign In</a>
+                </div>
+                <div class="col text-end">
+                    <a href="#"><img class="img-fluid w-25" src="./img/menu-user.png"/></a>
+                </div>
+            </div>
+            <div class="mt-3">
+                <button class="btn btn-outline-secondary rounded-pill me-2">Saved</button>
+                <button class="btn btn-outline-secondary rounded-pill me-2">Favorites</button>
+                <button class="btn btn-outline-secondary rounded-pill me-2">Interest</button>
+            </div>
+            <ul class="nav flex-column mt-4">
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link active text-body-tertiary" aria-current="page" href="#"><img class="img-fluid me-3" src="./img/mi1.svg"/>English</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/mi2.svg"/>Customer Service</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/mi3.svg"/>List your Business</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi4.svg"/>Adverties</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi5.svg"/>My Transactions</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi6.svg"/>Wishlist</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi7.svg"/>Manage Quotes</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi8.svg"/>We are hiring</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi9.svg"/>Settings</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi10.svg"/>Privacy Policy</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi11.svg"/>Investor Relations</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi12.svg"/>What's New</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi13.svg"/>Others</a>
+                </li>
+                <li class="nav-item mt-2 mb-2">
+                  <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/mi14.svg"/>Login</a>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
     <div class="container d_cont d_tbdr bg-white">
         <header class="bg-white fixed-top">
             <div class="row h-100">
-                <div class="col-4 col-lg-2 d_tbdr">
-                    <a href="#" class="d-block">
-                        <img class="img-fluid w-50" src="./img/logo.svg"/>
+                <div class="col-4 col-sm-2 d_form_col col-lg-2 d_tbdr">
+                    <a href="#" class="d-flex align-items-center">
+                        <img class="img-fluid mt-2" src="./img/logo.svg"/>
                     </a>
                 </div>
-                <div class="col-8 col-lg-2 d_tbdr">
+                <div class="col-8 col-sm-3 col-lg-2 d_tbdr">
                     <div class="d-block d-sm-none">
                         <ul class="nav float-end mt-1 d_tnr">
                             <li class="nav-item">
                                 <a class="nav-link active bg-primary text-white rounded-pill pt-1 pb-1" aria-current="page" href="#">Open App</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pt-1 pb-1" href="#">
+                                <a href="#" class="nav-link pt-1 pb-1">
                                     <!-- <img src="./img/bell_icon.svg"/> -->
                                     <i class="fa-regular fa-bell fa-lg text-dark"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pt-1 pb-1 ps-0 pe-0" href="#">
+                                <a class="nav-link pt-1 pb-1 ps-0 pe-0" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">
                                     <i class="fa-solid fa-bars text-dark"></i>
                                 </a>
                             </li>
@@ -205,12 +276,109 @@
                     
                 </div>
             </div>
-            <div class="d_m1">
-                m2
+            <div class="d_m2 mt-4 mb-3">
+                <a href="#">
+                    <img class="img-fluid" src="./img/banner/banner.png"/>
+                </a>
+            </div>
+            <div class="d_m2 mt-4 mb-3">
+                <div class="row m-0">
+                <div class="col ps-2 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/food.png"/>
+                    </a>
+                </div>
+                <div class="col ps-2 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/jiosim.png"/>
+                    </a>
+                </div>
+                <div class="col ps-2 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/flight.png"/>
+                    </a>
+                </div>
+                <div class="col ps-2 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/paybills.png"/>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="d_m3 mt-4 mb-3">
+                <div class="row m-0">
+                <div class="col ps-1 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/explore1.gif"/>
+                    </a>
+                </div>
+                <div class="col ps-2 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/explore2.gif"/>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="d_m4 mt-4 mb-3">
+                <div class="row">
+                    <div class="col"><a href="#" class="btn ps-0 pe-0 fw-bold fs-6">Home Services</a></div>
+                    <div class="col text-end"><img class="img-fluid" src="./img/na.svg"/></div>
+                </div>
+                <div class="row m-0">
+                <div class="col ps-1 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/b4_1.png"/>
+                    </a>
+                </div>
+                <div class="col ps-2 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/b4_2.png"/>
+                    </a>
+                </div>
+                <div class="col ps-2 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/b4_3.png"/>
+                    </a>
+                </div>
+                <div class="col ps-2 pe-1">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/banner/b4_4.png"/>
+                    </a>
+                </div>
+            </div>
             </div>
         </main>
-        <footer class="bg-warning">
-            <div class="d_1">
+        <footer class="d_tbdr bg-warning">
+            <div class="d-block d-sm-none">
+                <div class="row text-center">
+                    <div class="col d_tbdr">
+                        <a href="#" class="btn">
+                            <img class="img-fluid" src="./img/home.svg"/>
+                        </a>
+                    </div>
+                    <div class="col d_tbdr">
+                        <a href="#" class="btn">
+                            <img class="img-fluid" src="./img/b2b.svg"/>
+                        </a>
+                    </div>
+                    <div class="col d_tbdr">
+                        <a href="#" class="btn">
+                            <img class="img-fluid" src="./img/pay.svg"/>
+                        </a>
+                    </div>
+                    <div class="col d_tbdr">
+                        <a href="#" class="btn">
+                            <img class="img-fluid" src="./img/newswbg.png"/>
+                        </a>
+                    </div>
+                    <div class="col d_tbdr">
+                        <a href="#" class="btn">
+                            <img class="img-fluid" src="./img/more.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d_1 d-none d-sm-block">
                 <div class="d_ftr1 border-top border-top">Footer 1</div>
                 <div class="d_ftr2 border-top border-bottom">Footer 2</div>
                 <div class="d_ftr3 border-top border-top">Footer 3</div>

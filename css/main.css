@@ -113,10 +113,16 @@ top: 81px;
     }
     
     .mt-5.d_mt-5 {
-        margin-top: 6rem!important;
+        margin-top: 7rem!important;
     }
     .mt-5.d_mt-5 a {
         font-size: 11px;
         color: #414e5a;
+    }
+    footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
     }
 }
