@@ -7,14 +7,17 @@ body {
     font-family: 'Roboto';
 }
 .d_tbdr {
-    border: red dashed 2px;
+    border: red dashed 1px;
 }
 .d_cont {
     min-height: 5000px;
 }
 header{
-    height: 81px;
+    /* height: 81px;
     width: 92%;
+    margin: auto; */
+    min-height: 81px;
+    width: 94%;
     margin: auto;
 }
 
@@ -112,8 +115,11 @@ top: 81px;
         height: 50px;
     }
     
-    .mt-5.d_mt-5 {
+    /* .mt-5.d_mt-5 {
         margin-top: 7rem!important;
+    } */
+    .d_mt-5 {
+        padding-top: 40px!important;
     }
     .mt-5.d_mt-5 a {
         font-size: 11px;
