@@ -2,6 +2,24 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.ttf') format("truetype");
 }
+
+.custom-border-none.btn:active {
+    border: none;
+}
+.fs-7 {
+    font-size: 12px;
+}
+
+.double-line {
+    border-bottom: 1px solid #eeeeee;
+    line-height: 0.1em;
+    margin: 10px 0;
+  }
+  .double-line span {
+    background-color: #ffffff;
+    padding: 0 10px;
+  }
+
 body {
     background-color: #e8e8e8;
     font-family: 'Roboto';
@@ -13,9 +31,6 @@ body {
     min-height: 5000px;
 }
 header{
-    /* height: 81px;
-    width: 92%;
-    margin: auto; */
     min-height: 81px;
     width: 94%;
     margin: auto;
@@ -102,7 +117,9 @@ top: 81px;
        color: #111;
        opacity:0.5!important;
  }
-
+.round-color {
+    border-color: #ddecf2;
+}
 
 
 @media (min-width: 1400px){
