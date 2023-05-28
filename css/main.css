@@ -25,15 +25,20 @@ body {
     font-family: 'Roboto';
 }
 .d_tbdr {
-    border: red dashed 1px;
+    /* border: red dashed 1px; */
 }
 .d_cont {
     /* min-height: 5000px; */
 }
+.inp-height {
+    line-height: 41px;
+}
 header{
     min-height: 81px;
-    width: 94%;
+    /* width: 94%; */
+    width: 100%;
     margin: auto;
+    z-index: 1000;
 }
 
 ul > li> a:hover  {
@@ -122,15 +127,99 @@ top: 81px;
     border-color: #ddecf2;
 }
 
-.m11 {
+.d_m11 {
+    min-height: 120px;
+}
+
+
+.d_m22 {
     height: 275px;
 }
+
+.d_mainslider {
+ cursor: pointer;
+}
+.d_mainslider img {
+    width: 100%;
+    height: 100%;
+}
+.d_mainslider .carousel-indicators button {
+    width: 6px;
+    height: 6px;
+}
+.d_mainslider .d_ccp, .d_ccn {
+    visibility: hidden;
+    background:rgba(0,0,0,0.2);
+    width: 25px;
+    height: 25px;
+}
+.d_mainslider .d_ccp {
+ left: 10px;
+}
+.d_mainslider .d_ccn {
+    right: 10px;
+   }
+
+.d_mainslider:hover .d_ccp,
+.d_mainslider:hover .d_ccn {
+    visibility: visible;
+    background:rgba(0,0,0,1);
+}
+
+/* .d_m33_icon {
+    display: flex;
+    justify-content: left;
+}
+.d_m33_icon li {
+    width: 124px;
+    border: #414e5a solid 1px;
+} */
+.d_m33 {
+    min-height: 275px;
+}
+
+.d_m44 {
+    min-height: 540px;
+}
+
+.d_m33_icon > li > a:hover {
+    background-color: transparent;
+}
+.d_m33_icon > li > a img{
+    width: 65px;
+    height: 65px;
+}
+.d_m33_icon > li > a:hover img{
+    /* box shadow syntex box-shadow:X Y B S C */
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+}
+.d_orange {
+    background-color: #fe610c;
+}
+.d_orange:hover {
+    background-color: #ff7d18;
+}
+.text-blue {
+    color: #0076d7;
+}
+
 
 @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1438px;
     }
 }
+@media screen and (max-width: 767px){
+    .d_main_wrap.ps-5, .d_main_wrap.pe-5 {
+        padding-right: 1rem!important;
+        padding-left: 1rem!important;   
+       }
+       .d_mainslider img {
+        width: 100%;
+        height: 100%;
+    }
+ }
+
 @media screen and (max-width: 576px){
     .d_form_col {
         height: 50px;
@@ -140,7 +229,7 @@ top: 81px;
         margin-top: 7rem!important;
     } */
     .d_mt-5 {
-        padding-top: 40px!important;
+        padding-top: 10px!important;
     }
     .mt-5.d_mt-5 a {
         font-size: 11px;
@@ -152,8 +241,7 @@ top: 81px;
         left: 0px;
         width: 100%;
     }
-    .d_tbdr {
+    /* .d_tbdr {
         border-color: #ffffff;
-    }
-
+    } */
 }

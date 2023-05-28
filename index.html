@@ -119,12 +119,12 @@
     </div>
   </div>
   
-    <div class="container d_cont d_tbdr bg-white">
-        <header class="bg-white fixed-top d_tbdr border-bottom">
+    <div class="container d_cont d_tbdr bg-white ps-0 pe-0">
+        <header class="bg-white fixed-top1 position-sticky top-0 d_tbdr border-bottom ps-4 pe-4">
             <div class="row h-100">
                 <div class="col-4 col-sm-2 d_form_col d_tbdr">
                     <a href="#" class="d-flex align-items-center h-100">
-                        <img class="img-fluid mt-2" src="./img/logo.svg"/>
+                        <img class="img-fluid" width="100" src="./img/logo.svg"/>
                     </a>
                 </div>
                 <div class="col-8 col-sm-3 d_form_col d_tbdr">
@@ -167,7 +167,7 @@
                         </div>
                     </form>
                     <div class="d-none d-sm-block d_tbdr">
-                        <ul class="nav mt-3 ms-5 d_menu">
+                        <ul class="nav mt-3 ms-4 d_menu">
                             <li class="nav-item">
                                 <a class="ps-2 pt-1 pb-1 pe-2  nav-link active" aria-current="page" href="#"><img src="./img/language_icon.svg"/> English <img src="./img/down_arrow.svg"/></a>
                                     <ul class="nav flex-column d_submenu bg-white border list-unstyled position-absolute">
@@ -201,7 +201,7 @@
                                 <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/bell_icon.svg"/></a>
                             </li>
                             <li class="nav-item">
-                                <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/listing_icon.svg"/> Login/Signup</a>
+                                <a class="ps-2 pt-1 pb-1 pe-2 nav-link text-secondary-emphasis"><img src="./img/listing_icon.svg"/> Login / Signup</a>
                             </li>
                           </ul>
                     </div>
@@ -209,7 +209,8 @@
                 </div>
             </div>
         </header>
-        <main class="d_tbdr bg-white mt-5 d_mt-5">
+        <main class="d_tbdr bg-white mt-0 d_mt-5 ps-5 pe-5 d_main_wrap">
+            <!-- Mobile View Main Start -->
             <div class="d_m1 d-block d-sm-none">
                 <div class="row m-0">
                     <div class="col-3 p-0 d_tbdr d-flex justify-content-center align-items-center">
@@ -445,17 +446,57 @@
               
             
             </div>
+            <!-- Mobile View Main End -->
 
-            <div class="m11 d-none d-sm-block">
+            <!-- Desktop View Main Start -->
+            <div class="d_m11 d_tbdr mt-3 d-none d-sm-block">
+                <div class="row h-100">
+                    <div class="col-8 h-100 col-md-12 col-sm-12 col-lg-8">
+                        <h3 class="fw-semibold">Search across '3.4 Crore + <span class="text-blue fw-bold">Business</span></h3>
+                        <form>
+                            <div class="row m-0 d_tbdr">
+                                <div class="col-4 col-sm-4 col-lg-4 ps-1 pe-2 d_tbdr d-flex flex-row border rounded-2 border-dark shadow-sm">
+                                    <img src="./img/icons/location.svg"/>
+                                    <input type="text" class="form-control border-0 shadow-none pt-0 pb-0 ps-1 inp-height" placeholder="New Delhi, Tigri" aria-label="First name">
+                                </div>
+                                <div class="col-8 col-sm-8 col-md-8 col-lg-8 p-0 ps-3 d_tbdr">
+                                    <div class="row m-0 border rounded-2 border-dark shadow-sm d-flex justify-content-between align-items-center pt-1 pb-1">
+                                        <div class="col-9 col-sm-8 col-md-9 col-lg-9 pt-0 ps-1">
+                                            <input type="text" class="form-control border-0 shadow-none pt-0 pb-0 inp-height" placeholder="Search for expert service" aria-label="Last name">
+                                        </div>
+                                        <div class="col-3 p-0 pe-2 d-flex justify-content-end align-items-center">
+                                            <div class="d-flex flex-row">
+                                                <div class="ps-1 pe-0 pt-0 pb-0">
+                                                    <img src="./img/icons/mic.svg"/>
+                                                </div>
+                                                <div class="ps-1 pe-0 pt-0 pb-0">
+                                                    <button class="btn d_orange">
+                                                        <img src="./img/icons/search_white.svg"/>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-4 h-100 pb-4">
+                        <button class="btn border border-dark position-relative float-lg-end float-sm-start me-4 mt-4 bg-white fs-7"><span class="fw-lighter">Download App</span><img src="./img/icons/app.gif" class="position-absolute border border-dark rounded-1 bg-white  img-fluid w-25" style="bottom:-8px; right: -19px;"/></button>
+                    </div>
+                </div>
+            </div>
+            <div class="d_m22 d-none d-sm-block">
                 <div class="row m-0 h-100">
                     <div class="col-6 p-0 d_tbdr h-100">
-                        <div id="carouselExampleIndicators" class="carousel slide">
+                        <div id="carouselExampleIndicators" class="carousel slide d_mainslider">
                             <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="rounded-circle"></button>
                             </div>
-                            <div class="carousel-inner">
+                            <div class="carousel-inner rounded-4">
                               <div class="carousel-item active">
                                 <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_hotels.png?v=1.0" class="d-block w-100 img-fluid" alt="...">
                               </div>
@@ -478,12 +519,12 @@
                                 <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_webflight_23feb.png" class="d-block w-100 img-fluid" alt="...">
                               </div> -->
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <button class="carousel-control-prev d_ccp top-50 rounded-pill radius-circle" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon w-50" aria-hidden="true"></span>
                               <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <button class="carousel-control-next d_ccn top-50 rounded-pill radius-circle" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon w-50" aria-hidden="true"></span>
                               <span class="visually-hidden">Next</span>
                             </button>
                           </div>
@@ -498,6 +539,215 @@
                     </div>
                 </div>
             </div>
+            <div class="d_m33 d-none d-sm-block pb-0 d_tbdr">
+                <ul class="nav d_m33_icon mt-5 mx-auto">
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                      <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                        <img src="./img/icons/1.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                        <span class="d-block pt-2">Restaurants</span>
+                      </a>
+                    </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/2.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Hotels</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/3.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Real Estate</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/4.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Home Decor</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/5.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Education</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/6.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Rent &amp; Hire</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/7.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Hospitals</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/8.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Contractors</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/9.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Pet Shops</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/10.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">PG / Hostels</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/11.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Estate Agent</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/12.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Dentists</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/13.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">GYM</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/14.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Consultants</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/15.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Event Organisers</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/16.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Packers &amp; Movers</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/17.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Courier Service</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/18.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Travel</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/19.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Popular Categories</span>
+                        </a>
+                      </li>
+                    <li class="nav-item ms-2 me-2 p-0 mb-5">
+                        <a class="nav-link text-center text-dark" aria-current="page" href="#">
+                          <img src="./img/icons/20.svg" class="img-fluid mx-auto d-block border border-dark-subtle rounded-3 p-2"/>
+                          <span class="d-block pt-2">Hotels</span>
+                        </a>
+                      </li>
+                  </ul>
+            </div>
+            <div class="d_m44 d_m33 d-none d-sm-block pb-0 d_tbdr">
+                <div class="row m-0">
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 d_tbdr pb-4">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title pb-2 ps-3">Wedding Requisites</h5>
+                              <div class="row m-0">
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_1.png"/>
+                                    <figcaption class="pt-3">Banquet Halls</figcaption>
+                                </div>
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_2.png"/>
+                                    <figcaption class="pt-3">Bridal Requisite</figcaption></div>
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_3.png"/>
+                                    <figcaption class="pt-3">Caterers</figcaption>
+                                </div>
+                              </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 d_tbdr pb-4">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title pb-2 ps-3">Beauty &amp; Spa</h5>
+                              <div class="row m-0">
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_4.png"/>
+                                    <figcaption class="pt-3">Beauty Palours</figcaption>
+                                </div>
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_5.png"/>
+                                    <figcaption class="pt-3">Spa &amp; Massages</figcaption></div>
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_6.png"/>
+                                    <figcaption class="pt-3">Salons</figcaption>
+                                </div>
+                              </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 d_tbdr pb-4">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title pb-2 ps-3">Jd Xperts - Home Services</h5>
+                              <div class="row m-0">
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_7.png"/>
+                                    <figcaption class="pt-3">AC Repair</figcaption>
+                                </div>
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_8.png"/>
+                                    <figcaption class="pt-3">Refrigerator Repair</figcaption></div>
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_9.png"/>
+                                    <figcaption class="pt-3">Pest control services</figcaption>
+                                </div>
+                              </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-md-12 col-lg-6 d_tbdr pb-4">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title pb-2 ps-3">Daily Needs</h5>
+                              <div class="row m-0">
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_7.png"/>
+                                    <figcaption class="pt-3">Movies</figcaption>
+                                </div>
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_8.png"/>
+                                    <figcaption class="pt-3">Grocery</figcaption></div>
+                                <div class="col text-center">
+                                    <img class="img-fluid" src="./img/banner/m44_9.png"/>
+                                    <figcaption class="pt-3">Electricians</figcaption>
+                                </div>
+                              </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Desktop View Main End -->
         </main>
         <footer class="d_tbdr bg-white">
             <div class="d-block d-sm-none">
