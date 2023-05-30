@@ -38,12 +38,22 @@
 .d_quick_color4 {
     background-color: #00AC7D;
 }
+.d_danger {
+    background-color: #ec4f4f;
+}
 /* Text color custom class End */
 
 body {
     background-color: #e8e8e8;
     /* font-family: 'Roboto'; */
     font-family: 'Poppins-Regular', sans-serif;
+}
+.d_fs_8 {
+    font-size: 8px;
+}
+.d_business-tip {
+    left: 32%;
+    top: -5px;
 }
 
 .d_scrollToTop {
@@ -112,7 +122,16 @@ header{
 ul > li> a:hover  {
     background-color: #ededed;
     cursor: pointer;
+    
 }
+.d_menu > li > a  {
+    font-size: 14px;
+    font-weight: 400;
+}
+.d_menu > li > a.active  {
+    color: #0076d7!important;
+}
+
 .d_menu > li:hover ul { 
     display: block; /*Show*/
 }
