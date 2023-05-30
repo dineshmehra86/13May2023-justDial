@@ -15,6 +15,9 @@
 
 <body>
     <!-- Modal -->
+    <button class="d_scrollToTop btn bg-light rounded-circle position-fixed bottom-0 end-0" style="bottom: 36px!important;right: 10px!important;">
+        <i class="fa-solid fa-chevron-up fa-lg"></i>
+    </button>
 <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
@@ -120,14 +123,14 @@
   </div>
   
     <div class="container d_cont d_tbdr bg-white ps-0 pe-0">
-        <header class="bg-white fixed-top1 position-sticky top-0 d_tbdr border-bottom ps-4 pe-4">
-            <div class="row h-100">
-                <div class="col-4 col-sm-2 d_form_col d_tbdr">
-                    <a href="#" class="d-flex align-items-center h-100">
-                        <img class="img-fluid" width="100" src="./img/logo.svg"/>
+        <header class="bg-white fixed-top1 position-sticky top-0 d_tbdr border-bottom ps-4 pe-4 pt-3 pb-3">
+            <div class="row">
+                <div class="col-4 col-sm-2 d_form_col d_tbdr d-flex align-items-center">
+                    <a href="#" class="">
+                        <img class="img-fluid" width="102" height="25" src="./img/logo.svg"/>
                     </a>
                 </div>
-                <div class="col-8 col-sm-3 d_form_col d_tbdr">
+                <div class="col-8 col-sm-3 d_form_col d_tbdr d-block d-sm-none">
                     <div class="d-block d-sm-none">
                         <ul class="nav float-end mt-2 d_tnr">
                             <li class="nav-item">
@@ -147,8 +150,8 @@
                           </ul>
                     </div>
                 </div>
-                <div class="col-12 col-sm-7 pt-2 ps-3 pe-3">
-                    <form class="d-sm-none d-md-none border mb-2 pt-0 pb-0 border-dark-subtle rounded-3 p-1 ">
+                <div class="col-12 col-sm-10 pt-2 ps-0 pe-0 d-lg-flex justify-content-lg-end">
+                    <form class="d-sm-none d-md-none border mb-2 mt-0 pt-0 pb-0 border-dark-subtle rounded-3 p-0">
                         <div class="row">
                             <div class="col-1 p-0">
                                 <button class="btn ms-3 me-1 p-0 pt-2">
@@ -156,7 +159,7 @@
                                 </button>
                             </div>
                             <div class="col-9 p-0">
-                                <input type="search" placeholder="Packers and movers" class="form-control border border-0 bg-none shadow-none bg-transparent1  pt-2 pb-0" id="exampleInputPassword1">
+                                <input type="search" placeholder="Packers and movers" class="form-control border border-0 bg-none shadow-none bg-transparent  pt-2 pb-0" id="exampleInputPassword1">
                                 
                             </div>
                             <div class="col-2 p-0">
@@ -167,7 +170,7 @@
                         </div>
                     </form>
                     <div class="d-none d-sm-block d_tbdr">
-                        <ul class="nav mt-3 ms-4 d_menu">
+                        <ul class="nav mt-0 ms-4 d_menu">
                             <li class="nav-item">
                                 <a class="ps-2 pt-1 pb-1 pe-2  nav-link active" aria-current="page" href="#"><img src="./img/language_icon.svg"/> English <img src="./img/down_arrow.svg"/></a>
                                     <ul class="nav flex-column d_submenu bg-white border list-unstyled position-absolute">
@@ -452,19 +455,67 @@
             <div class="d_m11 d_tbdr mt-3 d-none d-sm-block">
                 <div class="row h-100">
                     <div class="col-8 h-100 col-md-12 col-sm-12 col-lg-8">
-                        <h3 class="fw-semibold">Search across '3.4 Crore + <span class="text-blue fw-bold">Business</span></h3>
-                        <form>
-                            <div class="row m-0 d_tbdr">
-                                <div class="col-4 col-sm-4 col-lg-4 ps-1 pe-2 d_tbdr d-flex flex-row border rounded-2 border-dark shadow-sm">
-                                    <img src="./img/icons/location.svg"/>
-                                    <input type="text" class="form-control border-0 shadow-none pt-0 pb-0 ps-1 inp-height" placeholder="New Delhi, Tigri" aria-label="First name">
+                        <!-- <h3 class="fw-semibold">Search across '3.4 Crore + <span class="text-blue fw-bold">Business</span></h3> -->
+                        <!-- <div class="clearfix pb-2">
+                            <h3 class="fw-semibold bg-danger clearfix">
+                                <span class="float-start">Search across </span> 
+                                <span class="text-blue fw-bold float-start ps-2">
+                                    <small>'3.4 Crore + Business</small>
+                                    <small>Products &amp; Services</small>
+                                </span>
+                            </h3>
+                        </div> -->
+                        <div class="row m-0">
+                            <div class="col-3 p-0">
+                                <span class="fw-bold fs-3">Search across</span>
+                            </div>
+                            <div class="col-9 p-0 overflow-hidden" style="height: 42px;">
+                                <div class="d_animation">
+                                    <span class="d-block fs-3">'3.4 Crore + Business</span>
+                                    <span class="d-block fs-3">'2.8 Crore + Products &amp; Services</span>
                                 </div>
-                                <div class="col-8 col-sm-8 col-md-8 col-lg-8 p-0 ps-3 d_tbdr">
-                                    <div class="row m-0 border rounded-2 border-dark shadow-sm d-flex justify-content-between align-items-center pt-1 pb-1">
-                                        <div class="col-9 col-sm-8 col-md-9 col-lg-9 pt-0 ps-1">
-                                            <input type="text" class="form-control border-0 shadow-none pt-0 pb-0 inp-height" placeholder="Search for expert service" aria-label="Last name">
+                            </div>
+                        </div>
+                        <form class="d_search_form1">
+                            <div class="row m-0 d_tbdr">
+                                <div class="col-4 col-sm-4 col-lg-4 d_tbdr p-0">
+                                    <div class="d-flex flex-row border rounded-2 border-dark shadow-sm d_cty_inp align-items-center p-2">
+                                        <i class="fa-solid fa-location-dot me-1"></i>
+                                        <input type="text" class="form-control form-control-sm border-0 shadow-none inp-height1 bg-transparent d_cty_inp2" placeholder="New Delhi, Tigri" aria-label="First name">
+                                    </div>
+                                </div>
+                                <div class="col-8 col-sm-8 col-md-8 col-lg-8 d_tbdr p-0">
+                                    <div class="border rounded-2 border-dark shadow-sm d-flex justify-content-between align-items-center pt-2 pb-2 ps-2 pe-2 ms-3">
+                                        <input type="text" class="form-control form-control-sm border-0 shadow-none bg-transparent" placeholder="Search for expert service" aria-label="Last name">
+                                        <span class="d-flex align-items-center pt-0 pb-0">
+                                            <button class="border-0 bg-transparent me-2 p-0">
+                                                <i class="fa-solid fa-microphone fa-lg"></i>
+                                                <!-- <img src="./img/icons/mic.svg"/> -->
+                                            </button>
+                                            
+                                                <button class="btn d_orange d-flex align-items-center ps-2 pe-2 ">
+                                                    <!-- <img src="./img/icons/search_white.svg"/> -->
+                                                    <i class="fa-solid fa-magnifying-glass text-white fs-6"></i>
+                                                </button>
+                                            </span>
+                                    </div>
+                                    <!-- <div class="row m-0">
+                                        <div class="col-9 col-sm-8 col-md-9 col-lg-9 p-0">
+                                            <div class="border rounded-2 border-dark shadow-sm d-flex justify-content-between align-items-center p-2">
+                                                <input type="text" class="form-control form-control-sm border-0 shadow-none pt-0 pb-0 inp-height1" placeholder="Search for expert service" aria-label="Last name">
+                                                <div class="d-flex flex-row">
+                                                    <div class="ps-1 pe-0 pt-0 pb-0">
+                                                        <img src="./img/icons/mic.svg"/>
+                                                    </div>
+                                                    <div class="ps-1 pe-0 pt-0 pb-0">
+                                                        <button class="btn d_orange">
+                                                            <img src="./img/icons/search_white.svg"/>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-3 p-0 pe-2 d-flex justify-content-end align-items-center">
+                                        <div class="col-3 p-0 d-flex justify-content-end align-items-center">
                                             <div class="d-flex flex-row">
                                                 <div class="ps-1 pe-0 pt-0 pb-0">
                                                     <img src="./img/icons/mic.svg"/>
@@ -476,7 +527,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                             </div>
@@ -489,21 +540,21 @@
             </div>
             <div class="d_m22 d-none d-sm-block">
                 <div class="row m-0 h-100">
-                    <div class="col-6 p-0 d_tbdr h-100">
-                        <div id="carouselExampleIndicators" class="carousel slide d_mainslider">
+                    <div class="col-12 col-md-12 col-lg-6 p-0 d_tbdr h-100">
+                        <div id="carouselExampleIndicators" data-bs-ride="carousel" class="carousel slide d_mainslider">
                             <div class="carousel-indicators">
                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="rounded-circle"></button>
                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="rounded-circle"></button>
                             </div>
                             <div class="carousel-inner rounded-4">
-                              <div class="carousel-item active">
+                              <div class="carousel-item active" data-bs-interval="3000">
                                 <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_hotels.png?v=1.0" class="d-block w-100 img-fluid" alt="...">
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item"data-bs-interval="3000">
                                 <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_packersmovers.png?v=1.1" class="d-block w-100 img-fluid" alt="...">
                               </div>
-                              <div class="carousel-item">
+                              <div class="carousel-item" data-bs-interval="3000">
                                 <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/banner_interiordesigners.png" class="d-block w-100 img-fluid" alt="...">
                               </div>
                               <!-- <div class="carousel-item">
@@ -529,12 +580,40 @@
                             </button>
                           </div>
                     </div>
-                    <div class="col-6 p-0 d_tbdr h-100">
+                    <div class="col-12 col-md-12 col-lg-6 d_tbdr">
                         <div class="row m-0 h-100">
-                            <div class="col-3 d_tbdr p-0">1</div>
-                            <div class="col-3 d_tbdr p-0">2</div>
-                            <div class="col-3 d_tbdr p-0">3</div>
-                            <div class="col-3 d_tbdr p-0">4</div>
+                            <div class="col-12 col-12 col-md-12 col-lg-3 d_tbdr p-0">
+                               <a href="#" class="d-block text-decoration-none d_quick rounded-4 position-relative p-3 d_quick_color1 h-100 overflow-hidden">
+                                <span class="fs-6 text-white fw-bold d-block">B2B</span>
+                                <p class="fs-6 text-blue-light lh-sm d-block w-50 pt-1">Quick Quotes</p>
+                                <img src="./img/banner/b2b.png" class="img-fluid position-absolute end-0 bottom-0"/>
+                                <small class="d_explore fs-7 text-white d-block position-absolute bottom-0 mb-4 shadow-sm rounded-end-2 pt-1 pb-1 pe-2 ps-2 text-end">Explore <i class="fa-solid fa-chevron-right fa-lg ms-1"></i></small>
+                               </a>
+                            </div>
+                            <div class="col-12 col-12 col-md-12 col-lg-3 d_tbdr p-0">
+                                <a href="#" class="d-block text-decoration-none d_quick rounded-4 position-relative p-3 d_quick_color2 h-100 overflow-hidden">
+                                    <span class="fs-6 text-white fw-bold d-block">XPERTS</span>
+                                    <p class="fs-6 text-blue-light lh-sm d-block w-50 pt-1">Home Services</p>
+                                    <img src="./img/banner/xperts.png" class="img-fluid position-absolute end-0 bottom-0"/>
+                                    <small class="d_explore fs-7 text-white d-block position-absolute bottom-0 mb-4 shadow-sm rounded-end-2 pt-1 pb-1 pe-2 ps-2 text-end">Explore <i class="fa-solid fa-chevron-right fa-lg ms-1"></i></small>
+                                   </a>
+                            </div>
+                            <div class="col-12 col-12 col-md-12 col-lg-3 d_tbdr p-0 h-100">
+                                <a href="#" class="d-block text-decoration-none d_quick rounded-4 position-relative p-3 d_quick_color3 h-100 overflow-hidden">
+                                    <span class="fs-6 text-white fw-bold d-block">REAL ESTATE</span>
+                                    <p class="fs-6 text-blue-light lh-sm d-block w-50 pt-1">Properties Online</p>
+                                    <img src="./img/banner/realestate.png" class="img-fluid position-absolute end-0 bottom-0"/>
+                                    <small class="d_explore fs-7 text-white d-block position-absolute bottom-0 mb-4 shadow-sm rounded-end-2 pt-1 pb-1 pe-2 ps-2 text-end">Explore <i class="fa-solid fa-chevron-right fa-lg ms-1"></i></small>
+                                   </a>
+                            </div>
+                            <div class="col-12 col-12 col-md-12 col-lg-3 d_tbdr p-0 h-100">
+                                <a href="#" class="d-block text-decoration-none d_quick rounded-4 position-relative p-3 d_quick_color4 h-100 overflow-hidden">
+                                    <span class="fs-6 text-white fw-bold d-block">DOCTORS</span>
+                                    <p class="fs-6 text-blue-light lh-sm d-block w-50 pt-1">Book Now</p>
+                                    <img src="./img/banner/doctor.png" class="img-fluid position-absolute end-0 bottom-0"/>
+                                    <small class="d_explore fs-7 text-white d-block position-absolute bottom-0 mb-4 shadow-sm rounded-end-2 pt-1 pb-1 pe-2 ps-2 text-end">Explore <i class="fa-solid fa-chevron-right fa-lg ms-1"></i></small>
+                                   </a>
+                            </div>
                         </div>
                     </div>
                 </div>

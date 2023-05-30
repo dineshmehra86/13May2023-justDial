@@ -1,11 +1,82 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.ttf') format("truetype");
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf'), format('truetype');
+}
+
+/* Text and Bg color custom class Start */
+.d_cty_inp {
+    background: #eee;
+}
+.d_cty_inp2:focus {
+    background: transparent;
+}
+.text-blue-light {
+    color: #b5deff;
+}
+.d_orange {
+    background-color: #fe610c;
+}
+.d_orange:hover {
+    background-color: #ff7d18;
+}
+.text-blue {
+    background-color: #0076d7;
+}
+.d_quick_color1 {
+    background-color: #0F7DD8;
+}
+.d_quick_color2 {
+    background-color: #2654A0;
+}
+.d_quick_color3 {
+    background-color: #6769D0;
+}
+.d_quick_color4 {
+    background-color: #00AC7D;
+}
+/* Text color custom class End */
+
+body {
+    background-color: #e8e8e8;
+    /* font-family: 'Roboto'; */
+    font-family: 'Poppins-Regular', sans-serif;
+}
+
+.d_scrollToTop {
+animation: scrollToTop 0.5s linear infinite alternate;
+}
+@keyframes scrollToTop {
+    from {
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1,1);
+    }
+    
+    /* 0% {
+        transform: scale(0,0);
+    }
+    50% {
+        transform: scale(1,1);
+    }
+    100% {
+        transform: scale(.6,.6);
+    } */
+    
+}
+
+
 
 .custom-border-none.btn:active {
     border: none;
 }
+
 .fs-7 {
     font-size: 12px;
 }
@@ -20,10 +91,7 @@
     padding: 0 10px;
   }
 
-body {
-    background-color: #e8e8e8;
-    font-family: 'Roboto';
-}
+
 .d_tbdr {
     /* border: red dashed 1px; */
 }
@@ -84,21 +152,17 @@ top: 81px;
 
 ::-webkit-input-placeholder {
     font-size: 16px;
-    
     color: #111;
-
- }
+}
  
  :-moz-placeholder { /* Firefox 18- */
        font-size: 15px;
-       
        color: #111;
        opacity:0.5!important;
  }
  
  ::-moz-placeholder {  /* Firefox 19+ */
        font-size: 15px;
-       
        color: #111;
        opacity:0.5!important;
  }
@@ -107,7 +171,6 @@ top: 81px;
  
  ::-webkit-input-placeholder {
     font-size: 15px!important;
-    
     color: #111;
     opacity:0.5!important;
  }
@@ -119,7 +182,6 @@ top: 81px;
  }
  ::-moz-placeholder {  /* Firefox 19+ */
        font-size: 15px!important;
-       
        color: #111;
        opacity:0.5!important;
  }
@@ -133,15 +195,16 @@ top: 81px;
 
 
 .d_m22 {
-    height: 275px;
+    /* height: 275px; */
 }
 
 .d_mainslider {
  cursor: pointer;
+ height: 240px;
 }
 .d_mainslider img {
     width: 100%;
-    height: 100%;
+    height: 240px;
 }
 .d_mainslider .carousel-indicators button {
     width: 6px;
@@ -193,16 +256,74 @@ top: 81px;
     /* box shadow syntex box-shadow:X Y B S C */
     box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
 }
-.d_orange {
-    background-color: #fe610c;
+/* Search Box animation css Start */
+.d_search_form {
+  position: fixed;
+  z-index: 1000;
+  background-color: #ffffff;
+  top: 10px;
+  left: 330px;
+  transition: all 2s linear;  
 }
-.d_orange:hover {
-    background-color: #ff7d18;
-}
-.text-blue {
-    color: #0076d7;
+/* Search Box animation css End */
+.d_animation {
+    animation: myanim 1.6s alternate linear infinite;
 }
 
+.d_quick > img{
+    transform-origin: right bottom;
+    transform: scale3d(1,1,1);
+    transition: all linear 0.2s;
+    /* transition: transform 0.3s ease; */
+}
+.d_quick:hover > img {
+    transform: scale3d(1.04,1.04,1);
+}
+
+.d_quick > span{
+    transform-origin: left bottom;
+    transform: scale3d(1,1,1);
+    transition: all linear 0.2s;
+    /* transition: transform 0.3s ease; */
+}
+.d_quick:hover > span {
+    transform: scale3d(1.1,1.1,1);
+}
+
+.d_quick > small{
+    
+    /* transform: scale3d(1,1,1);
+    transition: all linear 0.3s; */
+    transition: all 0.4s ease;
+}
+.d_quick:hover > small {
+    transform: transitionX(1,1,1);
+    left: 0;
+    background-color: #ffffff;
+    color: #0076d7!important;
+}
+
+.d_explore {
+    left: -47px;
+}
+
+
+
+@keyframes myanim {
+    0% {
+        transform: translateY(0px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-42px);
+    }
+    100% {
+        transform: translateY(-42px);
+    }
+    
+}
 
 @media (min-width: 1400px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -214,10 +335,15 @@ top: 81px;
         padding-right: 1rem!important;
         padding-left: 1rem!important;   
        }
+       .d_mainslider {
+        height: auto;
+        padding-bottom: 10px;
+    }
        .d_mainslider img {
         width: 100%;
         height: 100%;
     }
+    
  }
 
 @media screen and (max-width: 576px){
