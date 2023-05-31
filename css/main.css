@@ -8,14 +8,14 @@
 }
 
 /* Modal class */
-.exampleModal2  {
+/* .exampleModal2  {
     backdrop-filter: blur(15px)!important;
-}
-/* .modal-backdrop {
+} */
+.modal-backdrop {
     backdrop-filter: blur(15px)!important;
     background: rgba(0,0,0,.5)!important;
     opacity: inherit!important;
-} */
+}
 
 /* Text and Bg color custom class Start */
 .d_cty_inp {
