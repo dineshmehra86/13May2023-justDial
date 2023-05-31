@@ -7,6 +7,16 @@
     src: url('../fonts/Poppins-Regular.ttf'), format('truetype');
 }
 
+/* Modal class */
+.exampleModal2  {
+    backdrop-filter: blur(15px)!important;
+}
+/* .modal-backdrop {
+    backdrop-filter: blur(15px)!important;
+    background: rgba(0,0,0,.5)!important;
+    opacity: inherit!important;
+} */
+
 /* Text and Bg color custom class Start */
 .d_cty_inp {
     background: #eee;
@@ -40,6 +50,16 @@
 }
 .d_danger {
     background-color: #ec4f4f;
+}
+.custom-btn:hover {
+    background-color: transparent;
+    color: inherit;
+}
+.d_bg_gray {
+    background-color: #f4f4f4;
+}
+.d_text_gray {
+    color: #bbb;
 }
 /* Text color custom class End */
 
@@ -97,13 +117,12 @@ animation: scrollToTop 0.5s linear infinite alternate;
     margin: 10px 0;
   }
   .double-line span {
-    background-color: #ffffff;
     padding: 0 10px;
   }
 
 
 .d_tbdr {
-    /* border: red dashed 1px; */
+    border: red dashed 1px;
 }
 .d_cont {
     /* min-height: 5000px; */
